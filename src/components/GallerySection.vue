@@ -1,5 +1,4 @@
 <script setup>
-// Props
 defineProps({
   galleryImages: Array,
   promoCards: Array,
@@ -9,7 +8,6 @@ defineProps({
 
 <template>
   <section class="my-28 px-8">
-    <!-- Section 3 Card Promo -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 mb-16">
       <div
         v-for="(card, index) in promoCards"
@@ -33,7 +31,6 @@ defineProps({
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       </p>
 
-      <!-- Tombol filter dengan icon -->
       <div class="flex justify-center space-x-4 mt-6">
         <button class="border px-4 py-2 rounded-full text-purple-600 border-purple-600 flex items-center gap-2">
           <component :is="icons.IconAll" class="w-4 h-4" /> All
@@ -50,7 +47,6 @@ defineProps({
       </div>
     </div>
 
-    <!-- Gambar Gallery -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
       <div v-for="(img, index) in galleryImages" :key="index">
         <img :src="img" alt="furniture" class="rounded-xl w-full h-[250px] object-cover" />
