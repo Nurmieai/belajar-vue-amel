@@ -74,7 +74,6 @@ const galleryIcons = {
 
 <template>
   <main>
-    <!-- Hero Section -->
     <section id="sectionHero" class="space-y-20">
       <div class="space-y-[27px]">
         <h1 class="text-7xl text-black font-medium text-center mt-60 mx-60">
@@ -98,14 +97,12 @@ const galleryIcons = {
         </div>
       </div>
 
-      <!-- Images horizontal -->
       <div class="flex space-x-10">
         <div class="overflow-x-auto" v-for="gambar in images" :key="gambar">
           <img :src="gambar" alt="gambar" class="object-cover h-80 w-80" />
         </div>
       </div>
 
-      <!-- Logo section -->
       <div class="flex justify-between">
         <div class="mx-4" v-for="logo in logos" :key="logo">
           <img :src="logo" alt="logo" class="object-cover" />
@@ -113,9 +110,7 @@ const galleryIcons = {
       </div>
     </section>
 
-   <!-- Product Card Section -->
 <section id="card" class="my-20 w-full px-25">
-  <!-- Bagian Heading -->
   <div class="text-center space-y-2 mb-12">
     <div class="inline-block bg-[#f3f3f3] px-4 py-1 rounded-md">
       <span class="text-orange-500 font-semibold">Check Our Product</span>
@@ -126,7 +121,6 @@ const galleryIcons = {
     </p>
   </div>
 
-  <!-- Grid Produk -->
   <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ">
     <CardComponent
       v-for="(product, index) in barang"
@@ -137,11 +131,8 @@ const galleryIcons = {
     />
   </div>
 </section>
-
-    <!-- Testimonial -->
     <TestimonialSection />
 
-    <!-- Gallery (with promoCards & icons) -->
     <GallerySection
       :gallery-images="galleryImages"
       :promo-cards="promoCards"
