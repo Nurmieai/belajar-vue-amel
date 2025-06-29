@@ -1,19 +1,15 @@
 <template>
   <section class="text-center space-y-4 my-28">
-  <!-- Rectangle abu-abu untuk “Testimonial Section” -->
   <div class="inline-block bg-[#f3f3f3] px-4 py-1 rounded-md mb-4">
     <span class="text-orange-500 font-semibold">Testimonial Section</span>
   </div>
 
-  <!-- Judul besar -->
   <h2 class="text-3xl font-bold">What Our Customer Say</h2>
 
-  <!-- Deskripsi -->
   <p class="text-gray-500 max-w-xl mx-auto">
     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   </p>
 
-  <!-- Tambahan testimonial cards (yang kamu udah punya) -->
 
     <div class="grid md:grid-cols-3 gap-8 px-4 md:px-20 pt-7">
       <div
